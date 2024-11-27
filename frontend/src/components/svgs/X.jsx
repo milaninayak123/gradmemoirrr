@@ -5,13 +5,19 @@
 // );
 // export default XSvg;
 
+// const XSvg = (props) => (
+// 	<div style={{ fontSize: '24px', fontWeight: 'bold', ...props.style }}>
+// 	  GradMemoir
+// 	</div>
+//   );
+//   export default XSvg
+
 const XSvg = (props) => (
 	<div style={{ fontSize: '24px', fontWeight: 'bold', ...props.style }}>
-	  GradMemoir
+	  <span style={{ color: '#4CAF50' }}>Grad</span>
+	  <span style={{ color: '#2196F3' }}>Memoir</span>
 	</div>
   );
-  export default XSvg
-
-
-
+  export default XSvg;
+  
 
