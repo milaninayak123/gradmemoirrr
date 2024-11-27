@@ -31,7 +31,7 @@ const XSvg = (props) => {
       <style jsx>{`
         @media (max-width: 480px) {
           .gradMemoirLogo {
-            font-size: 6px; /* Adjust the font size for mobile */
+            font-size: 4px; /* Adjust the font size for mobile */
             flex-direction: row; /* Stack the text vertically */
             text-align: center; /* Center-align the text */
           }
