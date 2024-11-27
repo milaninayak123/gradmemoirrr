@@ -12,11 +12,13 @@
 //   );
 //   export default XSvg
 
+
+
 const XSvg = (props) => {
   return (
     <div
       style={{
-        fontSize: '24px',
+        fontSize: '24px', // Default size for desktop
         fontWeight: 'bold',
         display: 'flex',
         alignItems: 'center',
@@ -31,14 +33,14 @@ const XSvg = (props) => {
       <style jsx>{`
         @media (max-width: 480px) {
           .gradMemoirLogo {
-            font-size: 4px; /* Adjust the font size for mobile */
-              white-space: nowrap;
-            flex-direction: row; /* Stack the text vertically */
+            font-size: 14px; /* Even smaller font size for mobile */
+            flex-direction: column; /* Stack the text vertically */
             text-align: center; /* Center-align the text */
           }
 
           .gradMemoirLogo span {
             padding-right: 0; /* Remove the right padding on mobile */
+            margin-bottom: 2px; /* Add a small margin for spacing between words */
           }
         }
       `}</style>
