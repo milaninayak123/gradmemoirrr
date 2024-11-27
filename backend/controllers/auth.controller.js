@@ -15,7 +15,7 @@ export const signup = async (req, res) => {
 		if (existingUser) {
 			return res.status(400).json({ error: "Username is already taken" });
 		}
-
+		
 		const existingEmail = await User.findOne({ email });
 		if (existingEmail) {
 			return res.status(400).json({ error: "Email is already taken" });
@@ -24,11 +24,13 @@ export const signup = async (req, res) => {
 		if (password.length < 6) {
 			return res.status(400).json({ error: "Password must be at least 6 characters long" });
 		}
-
+		// hash pw
+		//12346 -> lsk%hjsdks 
 		const salt = await bcrypt.genSalt(10);
 		const hashedPassword = await bcrypt.hash(password, salt);
 
 		const newUser = new User({
+			//we created an object which will have following:
 			fullName,
 			username,
 			email,
