@@ -5,46 +5,13 @@
 // );
 // export default XSvg;
 
-// const XSvg = (props) => (
-// 	<div style={{ fontSize: '24px', fontWeight: 'bold', ...props.style }}>
-// 	  GradMemoir
-// 	</div>
-//   );
-//   export default XSvg
-
-
-
-const XSvg = (props) => {
-  return (
-    <div
-      style={{
-        fontSize: '24px',
-        fontWeight: 'bold',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        ...props.style,
-      }}
-      className="gradMemoirLogo"
-    >
-      <span style={{ color: '#4CAF50', paddingRight: '4px' }}>Grad</span>
-      <span style={{ color: '#2196F3' }}>Memoir</span>
-
-      <style jsx>{`
-        @media (max-width: 480px) {
-          .gradMemoirLogo {
-            font-size: 16px; /* Adjust the font size for mobile */
-            flex-direction: column; /* Stack the text vertically */
-            text-align: center; /* Center-align the text */
-          }
-
-          .gradMemoirLogo span {
-            padding-right: 0; /* Remove the right padding on mobile */
-          }
-        }
-      `}</style>
-    </div>
+const XSvg = (props) => (
+	<div style={{ fontSize: '24px', fontWeight: 'bold', ...props.style }}>
+	  GradMemoir
+	</div>
   );
-};
+  export default XSvg
 
-export default XSvg;
+
+
+
